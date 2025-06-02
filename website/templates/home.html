@@ -1,0 +1,493 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock %}
+{% block content %}
+
+<!-- Hero Section -->
+<section class="hero-banner position-relative overflow-hidden">
+    <div class="hero-bg"></div>
+    <div class="container">
+        <div class="row align-items-center min-vh-60 py-5">
+            <div class="col-lg-6">
+                <div class="hero-content text-white">
+                    <h1 class="hero-title display-2 fw-bold mb-4 animate-slide-up">
+                        Seu <span class="text-gradient">iPhone</span> e <span class="text-gradient">MacBook</span> 
+                        <br>em Mãos Especialistas
+                    </h1>
+
+                    <div class="hero-buttons animate-slide-up">
+                        <a href="#servicos" class="btn btn-primary btn-lg me-3 px-4">
+                            <i class="fas fa-tools me-2"></i>Nossos Serviços
+                        </a>
+                        <a href="/contact" class="btn btn-outline-light btn-lg px-4">
+                            <i class="fas fa-phone me-2"></i>Fale Conosco
+                        </a>
+                    </div>
+                    <div class="hero-stats mt-5 animate-fade-in">
+                        <div class="row text-center">
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <h3 class="stat-number fw-bold">5000+</h3>
+                                    <p class="stat-label">Reparos Realizados</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <h3 class="stat-number fw-bold">98%</h3>
+                                    <p class="stat-label">Clientes Satisfeitos</p>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="stat-item">
+                                    <h3 class="stat-number fw-bold">6</h3>
+                                    <p class="stat-label">Anos de Experiência</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="hero-image text-center animate-float">
+                    <div class="device-showcase">
+                        <div class="device-item iphone">
+                            <i class="fas fa-mobile-alt fa-8x"></i>
+                        </div>
+                        <div class="device-item macbook">
+                            <i class="fas fa-laptop fa-6x"></i>
+                        </div>
+                        <div class="floating-icons">
+                            <i class="fas fa-screwdriver-wrench floating-icon"></i>
+                            <i class="fas fa-shield-alt floating-icon"></i>
+                            <i class="fas fa-clock floating-icon"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+    </div>
+</section>
+
+<!-- Serviços Section -->
+<section id="servicos" class="services-section py-5">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2 class="display-4 fw-bold">Nossos Serviços</h2>
+            <p class="lead text-muted">Especialistas em todos os tipos de reparo Apple</p>
+            <div class="section-divider mx-auto"></div>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card h-100 p-4 text-center hover-lift">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-mobile-alt fa-4x text-primary"></i>
+                    </div>
+                    <h4 class="service-title fw-bold mb-3">Reparo de iPhone</h4>
+                    <p class="service-description text-muted mb-4">
+                        Tela quebrada, bateria viciada, problemas no botão home, câmera, alto-falante e muito mais.
+                    </p>
+                    <ul class="service-features list-unstyled">
+                        <li><i class="fas fa-check text-success me-2"></i>Telas originais</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Reparo no mesmo dia</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Garantia de 90 dias</li>
+                    </ul>
+                    <div class="service-price mt-3">
+                        <span class="price-from">A partir de</span>
+                        <span class="price-value">R$ 89</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card h-100 p-4 text-center hover-lift featured">
+                    <div class="featured-badge">Mais Procurado</div>
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-laptop fa-4x text-primary"></i>
+                    </div>
+                    <h4 class="service-title fw-bold mb-3">Reparo de MacBook</h4>
+                    <p class="service-description text-muted mb-4">
+                        Teclado, tela, bateria, placa lógica, sistema operacional e otimização de performance.
+                    </p>
+                    <ul class="service-features list-unstyled">
+                        <li><i class="fas fa-check text-success me-2"></i>Diagnóstico completo</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Peças certificadas</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Backup gratuito</li>
+                    </ul>
+                    <div class="service-price mt-3">
+                        <span class="price-from">A partir de</span>
+                        <span class="price-value">R$ 199</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-4 col-md-6">
+                <div class="service-card h-100 p-4 text-center hover-lift">
+                    <div class="service-icon mb-3">
+                        <i class="fas fa-tablet-alt fa-4x text-primary"></i>
+                    </div>
+                    <h4 class="service-title fw-bold mb-3">Outros Dispositivos</h4>
+                    <p class="service-description text-muted mb-4">
+                        iPad, Apple Watch, AirPods, iMac e toda linha de produtos Apple.
+                    </p>
+                    <ul class="service-features list-unstyled">
+                        <li><i class="fas fa-check text-success me-2"></i>Avaliação gratuita</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Orçamento sem compromisso</li>
+                        <li><i class="fas fa-check text-success me-2"></i>Atendimento especializado</li>
+                    </ul>
+                    <div class="service-price mt-3">
+                        <span class="price-from">Consulte</span>
+                        <span class="price-value">Preços</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials-section py-5 bg-light">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2 class="display-4 fw-bold">O que Nossos Clientes Dizem</h2>
+            <p class="lead text-muted">Mais de 5000 clientes satisfeitos!</p>
+        </div>
+        
+        <div class="row g-4">
+            <div class="col-lg-4">
+                <div class="testimonial-card p-4 h-100">
+                    <div class="stars mb-3">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                    </div>
+                    <p class="testimonial-text">"Excelente atendimento! Consertaram meu iPhone no mesmo dia e ficou perfeito. Recomendo!"</p>
+                    <div class="testimonial-author">
+                        <strong>Maria Silva</strong>
+                        <small class="text-muted">Cliente desde 2022</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial-card p-4 h-100">
+                    <div class="stars mb-3">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                    </div>
+                    <p class="testimonial-text">"Meu MacBook estava lento demais. Eles otimizaram tudo e agora está voando. Preço justo!"</p>
+                    <div class="testimonial-author">
+                        <strong>João Santos</strong>
+                        <small class="text-muted">Designer Gráfico</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="testimonial-card p-4 h-100">
+                    <div class="stars mb-3">
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                        <i class="fas fa-star text-warning"></i>
+                    </div>
+                    <p class="testimonial-text">"Profissionais competentes e honestos. Explicaram tudo detalhadamente. Voltarei sempre!"</p>
+                    <div class="testimonial-author">
+                        <strong>Ana Costa</strong>
+                        <small class="text-muted">Empresária</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+/* Hero Section */
+.hero-banner {
+    min-height: 30vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    z-index: -1;
+}
+
+.hero-bg::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    opacity: 0.3;
+}
+
+.text-gradient {
+    background: linear-gradient(45deg, #ff6b6b, #ffd93d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-title {
+    font-size: 4rem;
+    line-height: 1.1;
+}
+
+.device-showcase {
+    position: relative;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.device-item {
+    position: absolute;
+    color: rgba(255,255,255,0.8);
+    transition: all 0.3s ease;
+}
+
+.device-item.iphone {
+    top: 20%;
+    right: 30%;
+    animation: float 3s ease-in-out infinite;
+}
+
+.device-item.macbook {
+    bottom: 20%;
+    left: 20%;
+    animation: float 3s ease-in-out infinite 1.5s;
+}
+
+.floating-icons {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.floating-icon {
+    position: absolute;
+    color: rgba(255,255,255,0.6);
+    font-size: 1.5rem;
+    animation: floating 4s ease-in-out infinite;
+}
+
+.floating-icon:nth-child(1) {
+    top: 10%;
+    left: 10%;
+    animation-delay: 0s;
+}
+
+.floating-icon:nth-child(2) {
+    top: 60%;
+    right: 15%;
+    animation-delay: 1s;
+}
+
+.floating-icon:nth-child(3) {
+    bottom: 10%;
+    left: 50%;
+    animation-delay: 2s;
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.scroll-arrow {
+    width: 20px;
+    height: 20px;
+    border: 2px solid white;
+    border-top: none;
+    border-left: none;
+    transform: rotate(45deg);
+    animation: scroll-bounce 2s infinite;
+}
+
+/* Service Cards */
+.service-card {
+    background: white;
+    border-radius: 15px;
+    border: 1px solid #e9ecef;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.service-card.featured {
+    border-color: #007bff;
+    box-shadow: 0 10px 30px rgba(0,123,255,0.1);
+}
+
+.featured-badge {
+    position: absolute;
+    top: -10px;
+    right: 20px;
+    background: linear-gradient(45deg, #ff6b6b, #ffd93d);
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.service-price {
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: auto;
+}
+
+.price-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Process Steps */
+.process-step {
+    position: relative;
+}
+
+.step-number {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 40px;
+    background: #007bff;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+/* CTA Section */
+.cta-box {
+    position: relative;
+    background: #007bff;
+}
+
+.cta-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    opacity: 0.9;
+}
+
+.cta-highlight {
+    background: rgba(255,255,255,0.2);
+    padding: 15px 30px;
+    border-radius: 50px;
+    display: inline-block;
+}
+
+/* Testimonials */
+.testimonial-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Animations */
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+}
+
+@keyframes floating {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(5deg); }
+}
+
+@keyframes scroll-bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(10px); }
+}
+
+.animate-slide-up {
+    animation: slideUp 1s ease-out;
+}
+
+.animate-fade-in {
+    animation: fadeIn 1.5s ease-out 0.5s both;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Utilities */
+.section-divider {
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(45deg, #007bff, #0056b3);
+    margin: 20px auto;
+    border-radius: 2px;
+}
+
+.hover-lift {
+    transition: all 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .device-showcase {
+        height: 250px;
+    }
+    
+    .service-card {
+        margin-bottom: 2rem;
+    }
+}
+</style>
+
+{% endblock %}

@@ -1,0 +1,272 @@
+{% extends 'base.html' %}
+{% block title %}Contato{% endblock %}
+{% block content %}
+
+<div class="hero-section bg-primary text-white py-5 mb-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-8">
+                <h1 class="display-4 fw-bold mb-3">Entre em Contato</h1>
+                <p class="lead">Estamos prontos para cuidar do seu iPhone e MacBook</p>
+            </div>
+            <div class="col-md-4 text-end">
+                <i class="fas fa-comments fa-5x opacity-75"></i>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+        <!-- Formulário de Contato -->
+        <div class="col-lg-8 mb-5">
+            <div class="contact-form-section p-4 border rounded-3 shadow-sm">
+                <div class="section-header mb-4">
+                    <h3 class="fw-bold">
+                        <i class="fas fa-envelope text-primary me-2"></i>
+                        Envie sua Mensagem
+                    </h3>
+                    <p class="text-muted">Preencha o formulário abaixo e entraremos em contato em até 2 horas!</p>
+                </div>
+
+                <form action="/contato" method="POST" class="needs-validation" novalidate>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="nome" class="form-label fw-semibold">Nome Completo *</label>
+                            <input type="text" class="form-control form-control-lg" id="nome" name="nome" required>
+                            <div class="invalid-feedback">
+                                Por favor, informe seu nome.
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="telefone" class="form-label fw-semibold">Telefone/WhatsApp *</label>
+                            <input type="tel" class="form-control form-control-lg" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+                            <div class="invalid-feedback">
+                                Por favor, informe seu telefone.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label fw-semibold">E-mail *</label>
+                        <input type="email" class="form-control form-control-lg" id="email" name="email" required>
+                        <div class="invalid-feedback">
+                            Por favor, informe um e-mail válido.
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="dispositivo" class="form-label fw-semibold">Tipo de Dispositivo</label>
+                            <select class="form-select form-select-lg" id="dispositivo" name="dispositivo">
+                                <option value="">Selecione o dispositivo</option>
+                                <option value="iPhone">iPhone</option>
+                                <option value="MacBook">MacBook</option>
+                                <option value="iPad">iPad</option>
+                                <option value="iMac">iMac</option>
+                                <option value="Apple Watch">Apple Watch</option>
+                                <option value="Outros">Outros</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="urgencia" class="form-label fw-semibold">Urgência</label>
+                            <select class="form-select form-select-lg" id="urgencia" name="urgencia">
+                                <option value="normal">Normal</option>
+                                <option value="urgente">Urgente</option>
+                                <option value="muito-urgente">Muito Urgente</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="mb-4">
+                        <label for="problema" class="form-label fw-semibold">Descreva o Problema *</label>
+                        <textarea class="form-control" id="problema" name="problema" rows="5" placeholder="Conte-nos detalhes sobre o problema do seu dispositivo..." required></textarea>
+                        <div class="invalid-feedback">
+                            Por favor, descreva o problema.
+                        </div>
+                    </div>
+
+                    <div class="d-grid">
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="fas fa-paper-plane me-2"></i>
+                            Enviar Mensagem
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Informações de Contato -->
+        <div class="col-lg-4">
+            <div class="contact-info">
+                <!-- Informações Principais -->
+                <div class="info-card p-4 mb-4 bg-primary text-white rounded-3">
+                    <h4 class="fw-bold mb-3">
+                        <i class="fas fa-map-marker-alt me-2"></i>
+                        Nossa Loja
+                    </h4>
+                    <div class="contact-item mb-3">
+                        <p class="mb-1"><strong>Endereço:</strong></p>
+                        <p class="mb-0">Avenida Paulista, 1000<br>Bela Vista - São Paulo/SP<br>CEP: 01310-100</p>
+                    </div>
+                    <div class="contact-item mb-3">
+                        <p class="mb-1"><strong>Horário:</strong></p>
+                        <p class="mb-0">Segunda a Sexta: 9h às 18h<br>Sábado: 9h às 13h<br>Domingo: Fechado</p>
+                    </div>
+                </div>
+
+                <!-- Contatos Rápidos -->
+                <div class="quick-contact">
+                    <div class="contact-method p-3 mb-3 border rounded-3 hover-lift">
+                        <div class="d-flex align-items-center">
+                            <div class="contact-icon me-3">
+                                <i class="fab fa-whatsapp text-success fa-2x"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1">WhatsApp</h6>
+                                <p class="text-muted mb-0">(11) 99999-9999</p>
+                                <small class="text-success">Resposta em minutos!</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-method p-3 mb-3 border rounded-3 hover-lift">
+                        <div class="d-flex align-items-center">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-phone text-primary fa-2x"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1">Telefone</h6>
+                                <p class="text-muted mb-0">(11) 3333-4444</p>
+                                <small class="text-muted">Seg. a Sex. 9h às 18h</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-method p-3 mb-3 border rounded-3 hover-lift">
+                        <div class="d-flex align-items-center">
+                            <div class="contact-icon me-3">
+                                <i class="fas fa-envelope text-warning fa-2x"></i>
+                            </div>
+                            <div>
+                                <h6 class="fw-bold mb-1">E-mail</h6>
+                                <p class="text-muted mb-0">contato@techfixapple.com</p>
+                                <small class="text-muted">Resposta em até 2h</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<style>
+.hover-lift {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15) !important;
+}
+
+.contact-method {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-method:hover {
+    background-color: #f8f9fa;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.btn-primary {
+    background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.special-offer {
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(255, 193, 7, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(255, 193, 7, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(255, 193, 7, 0);
+    }
+}
+
+@media (max-width: 768px) {
+    .display-4 {
+        font-size: 2.5rem;
+    }
+    
+    .hero-section .col-md-4 {
+        text-align: center !important;
+        margin-top: 2rem;
+    }
+    
+    .contact-method {
+        text-align: center;
+    }
+}
+
+/* Validação de formulário */
+.was-validated .form-control:valid {
+    border-color: #28a745;
+}
+
+.was-validated .form-control:invalid {
+    border-color: #dc3545;
+}
+</style>
+
+<script>
+// Validação de formulário em tempo real
+(function() {
+    'use strict';
+    window.addEventListener('load', function() {
+        var forms = document.getElementsByClassName('needs-validation');
+        var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+                if (form.checkValidity() === false) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            }, false);
+        });
+    }, false);
+})();
+
+// Máscara para telefone
+document.getElementById('telefone').addEventListener('input', function(e) {
+    let value = e.target.value.replace(/\D/g, '');
+    if (value.length >= 11) {
+        value = value.replace(/(\d{2})(\d{5})(\d{4})/, '($1) $2-$3');
+    } else if (value.length >= 6) {
+        value = value.replace(/(\d{2})(\d{4})(\d{0,4})/, '($1) $2-$3');
+    } else if (value.length >= 2) {
+        value = value.replace(/(\d{2})(\d{0,5})/, '($1) $2');
+    }
+    e.target.value = value;
+});
+</script>
+
+{% endblock %}
