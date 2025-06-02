@@ -51,18 +51,7 @@ venv\Scripts\activate  # Windows
 pip install -r requirements.txt
 ```
 
-### 4. Configure as variáveis de ambiente
-Crie um arquivo `.env` na raiz do projeto:
-```env
-SECRET_KEY=sua_chave_secreta_aqui
-DEBUG=True
-DATABASE_URL=sqlite:///db.sqlite3
-GOOGLE_MAPS_API_KEY=sua_chave_do_google_maps
-EMAIL_HOST_USER=seu_email@exemplo.com
-EMAIL_HOST_PASSWORD=sua_senha_de_app
-```
-
-### 5. Execute as migrações
+### 4. Execute as migrações
 ```bash
 python manage.py makemigrations
 python manage.py migrate
@@ -74,29 +63,3 @@ python manage.py runserver
 ```
 
 O site estará disponível em `http://127.0.0.1:8000/`
-
-## 📁 Estrutura do Projeto
-
-```
-manutencao-celular-site/
-├── core/                   # App principal
-│   ├── models.py          # Modelos de dados
-│   ├── views.py           # Views/Controllers
-│   ├── urls.py            # URLs do app
-│   └── templates/         # Templates HTML
-├── static/                # Arquivos estáticos
-│   └── images/
-├── media/                 # Upload de arquivos
-├── requirements.txt       # Dependências
-├── manage.py             # Script de gerenciamento Django
-└── settings.py           # Configurações do projeto
-```
-
-
-### Adicionando Novos Serviços
-- Acesse o admin Django em `/admin/`
-```
-```
-
-
-⭐ Se este projeto foi útil para você, considere dar uma estrela no repositório!
