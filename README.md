@@ -1,3 +1,6 @@
+<img width="1410" alt="image" src="https://github.com/user-attachments/assets/4df4f927-ceb3-4789-9d51-9399b22d3000" />
+
+
 # 📱 Site de Manutenção de Celular e MacBook
 
 Um site profissional desenvolvido em Django para uma empresa especializada em manutenção e reparo de dispositivos móveis e computadores Apple.
